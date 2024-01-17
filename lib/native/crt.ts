@@ -32,17 +32,6 @@ import crt_native from './binding';
  *
  * @category System
  */
-export function native_memory() {
-    return crt_native.native_memory();
-}
-
-/**
- * Dumps outstanding native memory allocations. If the ```AWS_CRT_MEMORY_TRACING```
- * environment variable is set to 1 or 2, will dump all active native memory to
- * the console log.
- *
- * @category System
- */
-export function native_memory_dump() {
-    return crt_native.native_memory_dump();
+export function doSomething() : number {
+    return crt_native.doSomethingUseful();
 }
